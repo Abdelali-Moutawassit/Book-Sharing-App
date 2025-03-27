@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!-- Developed by Siva Kishore G-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="https://htmljstemplates.com/static_files/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Quicksand:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dd5559ee21.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .smallContainer {
+            max-width: 940px;
+            width: 100%;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        #mainNavigation a.active {
+            color: #fff
+        }
+
+        #mainNavigation a {
+            color: #fff;
+            font-family: 'Quicksand', sans-serif;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        #heroImage {
+            z-index: 1;
+            top: -50%;
+            box-shadow: 4px 6px 12px 16px rgba(0, 0, 0, 0.7);
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            background-size: cover !important;
+            width: 50%;
+            left: -10%;
+            height: 80vh;
+        }
+
+        #mainNavigation {
+            z-index: 2
+        }
+
+        #overlay {
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            height: 100%;
+            z-index: 3;
+        }
+
+        #navWrap {
+            transition: all 600ms ease-in-out;
+            z-index: 5
+        }
+
+        .toggleNav {
+            transform: translateX(-100%);
+        }
+
+        .fa-times-circle {
+            cursor: pointer
+        }
+
+        #verticalMenu {
+            background: #fff;
+            width: 32px;
+            transition: all 600ms ease-in-out;
+        }
+
+        #menu {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            color: #000;
+            background: #fff;
+            border-radius: 100%;
+            box-shadow: 6px 0px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            line-height: 32px;
+            transform: translateX(12px);
+            cursor: pointer
+        }
+    </style>
+    <title>Page Center Nav</title>
+    <meta name="description" content="">
+
+
+</head>
+
+<body>
+    <div class="position-fixed top-0 start-0 shadow-lg d-flex align-items-center vh-100" id="verticalMenu">
+        <span id="menu" onclick="toggleNav()"><i class="fas fa-chevron-right"></i></span>
+    </div>
+    <div id="navWrap" class="toggleNav position-fixed top-0 start-0 d-flex align-items-center vh-100 w-100"
+        style="background:#000 url('https://htmljstemplates.com/static_files/images/html/mountainBgn.jpg') no-repeat;background-size:cover">
+        <div class="smallContainer position-relative">
+            <i class="far fa-times-circle display-6 position-fixed text-white top-0 end-0 me-4 mt-4"
+                onclick="toggleNav()"></i>
+            <div>
+                <div class="position-absolute rounded" id="heroImage">
+                    <div class="position-absolute" id="overlay"></div>
+                </div>
+                <div role="navigation" class="ms-3 position-relative" id="mainNavigation">
+                    <ul class="list-unstyled border-bottom border-info p-2 text-uppercase">
+                        <li class="d-inline me-3"><a onclick="changeImage('house_1.jpg',false)" href="#"
+                                class="active"><i class="fas fa-home me-2 align-text-top text-info"></i> Home</a></li>
+                        <li class="d-inline mx-3"><a onclick="changeImage('house_2.jpg',false)" href="#"><i
+                                    class="fas fa-drafting-compass me-2 align-text-top text-info"></i> Designs</a></li>
+                        <li class="d-inline mx-3"><a onclick="changeImage('house_3.jpg',false)" href="#"><i
+                                    class="fas fa-map-marker me-2 align-text-top text-info"></i> Locations</a></li>
+                        <li class="d-inline mx-3"><a onclick="changeImage('house_4.jpg',false)" href="#"><i
+                                    class="fas fa-sync-alt me-2 align-text-top text-info"></i> Process</a></li>
+                        <li class="d-inline mx-3 float float-end"><a onclick="changeImage('house_5.jpg',false)"
+                                href="#"><i class="far fa-id-badge me-2 align-text-top text-info"></i> Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container" style="height:180px">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ms-auto p-3" id="insertText">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-left: 40px;">
+    <!-- content -->
+
+
+
+
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script>
+    var heroImage = document.getElementById('heroImage')
+    var navWrap = document.getElementById('navWrap')
+    var insertText = document.getElementById('insertText')
+    var verticalMenu = document.getElementById('verticalMenu')
+
+    function toggleNav() {
+        var className = navWrap.className
+        if (className.includes('toggleNav')) {
+            verticalMenu.classList.add('toggleNav')
+            setTimeout(function () {
+                navWrap.classList.remove('toggleNav')
+            }, 600)
+        } else {
+            navWrap.classList.add('toggleNav')
+            setTimeout(function () {
+                verticalMenu.classList.remove('toggleNav')
+            }, 600)
+        }
+    }
+
+    var currentImage = 'house_1.jpg'
+    changeImage(currentImage, true)
+
+    function changeImage(img, init) {
+
+        switch (img) {
+            case 'house_1.jpg':
+                insertText.innerHTML = `<h1 class="text-white">Home</h1>
+        <p class="text-muted">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+        </p>`
+                break;
+            case 'house_2.jpg':
+                insertText.innerHTML = `<h1 class="text-white">Designs</h1>
+        <p class="text-muted">
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look
+        </p>`
+                break;
+            case 'house_3.jpg':
+                insertText.innerHTML = `<h1 class="text-white">Locations</h1>
+        <p class="text-muted">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+        </p>`
+                break;
+            case 'house_4.jpg':
+                insertText.innerHTML = `<h1 class="text-white">Process</h1>
+        <p class="text-muted">
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look
+        </p>`
+                break;
+
+            default:
+                insertText.innerHTML = `<h1 class="text-white">Contact Us</h1>
+        <form onsubmit="event.preventDefault()" class="my-4">
+          <input type="text" class="form-control" />
+          <button class="btn btn-outline-info mt-3 w-100">Submit</button>
+        </form>
+        `
+                break;
+        }
+
+        if (!init)
+            if (currentImage === img) return
+        var path = "https://htmljstemplates.com/static_files/images/html/" + img
+        heroImage.style.background = `url('${path}')`
+        heroImage.animate([
+            // keyframes
+            {
+                opacity: 0
+            },
+            {
+                opacity: 1
+            }
+        ], {
+            // timing options
+            duration: 1000,
+            iterations: 1
+        });
+        currentImage = img
+    }
+</script>
+
+</html>
