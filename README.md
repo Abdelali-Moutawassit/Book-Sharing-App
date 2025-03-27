@@ -79,6 +79,9 @@ L'upload des images est géré avec **Multer**, et les fichiers sont stockés da
 ### Login page
 <img width="944" alt="image" src="https://github.com/user-attachments/assets/1e09cc5a-9e05-4d81-90d5-6ff4e35bbfba" />
 
+### Profil 
+<img width="943" alt="image" src="https://github.com/user-attachments/assets/690ea04c-506a-4ce4-9fc7-c9410e67d4ea" />
+
 
 
 
