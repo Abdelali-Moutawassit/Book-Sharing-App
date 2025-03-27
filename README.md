@@ -85,6 +85,8 @@ L'upload des images est géré avec **Multer**, et les fichiers sont stockés da
 ### Publication 
 <img width="622" alt="image" src="https://github.com/user-attachments/assets/ba52c738-154b-4c46-865d-060ae19825d5" />
 
+### Create Book Page 
+<img width="955" alt="image" src="https://github.com/user-attachments/assets/e9912a3e-eab6-4cfd-adde-bb15c1dc7622" />
 
 
 
