@@ -67,6 +67,12 @@ L'application utilise **Passport.js** avec une stratégie locale pour la connexi
 L'upload des images est géré avec **Multer**, et les fichiers sont stockés dans le dossier `uploads/images`.
 
 ## 📷 Screens pour le site :
+<img width="946" alt="image" src="https://github.com/user-attachments/assets/2af5b9fc-fb56-4b49-9e30-acaac44f86fe" />
+<img width="947" alt="image" src="https://github.com/user-attachments/assets/289b1983-9960-476a-abf1-da5022902d0c" />
+<img width="869" alt="image" src="https://github.com/user-attachments/assets/859b0e55-0bd6-40c8-a665-2da6d1f98d24" />
+<img width="921" alt="image" src="https://github.com/user-attachments/assets/61630d4e-6d09-442f-afbf-558e90d9aeb8" />
+
+
 
 
 ## 📌 Améliorations futures
